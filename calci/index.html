@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Love+Ya+Like+A+Sister&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="calc-container">
+    <h1 class="calc-title"> CALCULATOR.</h1>
+
+    <div class="calculator" role="application" aria-label="Calculator">
+      <div class="screen" id="screen">
+        <div class="history" id="history"></div>
+        <div class="display" id="display">0</div>
+      </div>
+
+      <div class="grid">
+        <button class="btn-accent span-2" data-action="clear">AC</button>
+        <button data-action="back">⌫</button>
+        <button class="btn-op" data-value="/">÷</button>
+
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button class="btn-op" data-value="*">×</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button class="btn-op" data-value="-">−</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button class="btn-op" data-value="+">+</button>
+
+        <button data-value="0" class="span-2">0</button>
+        <button data-value=".">.</button>
+        <button class="btn-accent" data-action="equals">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
